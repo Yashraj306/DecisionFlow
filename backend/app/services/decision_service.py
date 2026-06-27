@@ -8,7 +8,7 @@ def create_decision(db: Session, decision: DecisionCreate):
     db_decision = Decision(
         title=decision.title,
         problem=decision.problem,
-        priority=decision.priority,
+        priority=decision.priority
     )
 
     db.add(db_decision)
@@ -23,11 +23,9 @@ def get_all_decisions(db: Session):
 
 
 def get_decision_by_id(db: Session, decision_id: int):
-    return (
-        db.query(Decision)
-        .filter(Decision.id == decision_id)
-        .first()
-    )
+    return db.query(Decision).filter(
+        Decision.id == decision_id
+    ).first()
 
 
 def update_decision(
@@ -49,6 +47,7 @@ def update_decision(
     db.refresh(decision)
 
     return decision
+
 
 def delete_decision(db: Session, decision_id: int):
     decision = get_decision_by_id(db, decision_id)

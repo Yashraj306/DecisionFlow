@@ -12,4 +12,5 @@ class Decision(Base):
     problem = Column(String(1000), nullable=False)
     status = Column(String(30), default="Pending")
     priority = Column(String(20), default="Medium")
+    
     created_at = Column(DateTime, default=datetime.utcnow)

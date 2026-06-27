@@ -1,0 +1,190 @@
+/* ==========================================
+   Glassmorphism Navbar
+========================================== */
+
+.navbar{
+
+    position:sticky;
+
+    top:20px;
+
+    z-index:1000;
+
+    width:100%;
+
+}
+
+.navbar-container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    height:76px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 22px;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+}
+
+.logo-text h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.logo-text p{
+
+    color:#64748b;
+
+    font-size:13px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.nav-links a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    color:#334155;
+
+    font-weight:500;
+
+}
+
+.nav-links a:hover{
+
+    background:#eef4ff;
+
+}
+
+.nav-links a.active{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.new-decision-btn{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color:white !important;
+
+}
+
+.new-decision-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(37,99,235,.35);
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+top:10px;
+
+}
+
+.navbar-container{
+
+height:auto;
+
+padding:20px;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}

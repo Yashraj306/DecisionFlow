@@ -1,0 +1,140 @@
+/* ==========================================
+   Decision Card
+========================================== */
+
+.decision-card{
+
+    background:var(--surface);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    border:1px solid transparent;
+
+}
+
+.decision-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 25px 45px rgba(37,99,235,.12);
+
+}
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:18px;
+
+}
+
+.card-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.card-problem{
+
+    color:var(--text-light);
+
+    margin:18px 0;
+
+    line-height:1.6;
+
+}
+
+.card-meta{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:22px;
+
+}
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid var(--border);
+
+    padding-top:18px;
+
+}
+
+.card-date{
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
+
+.card-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.action-btn:hover{
+
+transform:translateY(-2px) scale(1.08);
+
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.view-btn{
+
+    background:#eef4ff;
+
+    color:var(--primary);
+
+}
+
+.edit-btn{
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+}
+
+.delete-btn{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+.action-btn:hover{
+
+    transform:scale(1.08);
+
+}

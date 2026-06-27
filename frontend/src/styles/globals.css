@@ -1,0 +1,99 @@
+/* Animated Background */
+
+body{
+    font-family:"Inter",sans-serif;
+    color:var(--text);
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:
+        linear-gradient(135deg,#f8fafc 0%,#eef4ff 100%);
+}
+
+/* Blob 1 */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:420px;
+height:420px;
+
+top:-150px;
+left:-150px;
+
+border-radius:50%;
+
+background:#60a5fa;
+
+opacity:.18;
+
+filter:blur(120px);
+
+animation:blob1 14s ease-in-out infinite alternate;
+
+z-index:-2;
+
+}
+
+/* Blob 2 */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:360px;
+height:360px;
+
+bottom:-120px;
+right:-120px;
+
+border-radius:50%;
+
+background:#8b5cf6;
+
+opacity:.18;
+
+filter:blur(120px);
+
+animation:blob2 18s ease-in-out infinite alternate;
+
+z-index:-2;
+
+}
+
+@keyframes blob1{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(80px,60px);
+
+}
+
+}
+
+@keyframes blob2{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(-80px,-50px);
+
+}
+
+}
